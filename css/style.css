@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+
+
+
+@font-face {
+    font-family: idroid;
+    src: url(/fontes/idroid.otf);
+}
+
+
+body{
+    background-color: #84e194;
+    border-radius: 10px;
+       
+ }
+
+header{
+    font-family: 'Titillium Web', sans-serif;
+    text-shadow: 1px 1px 1px rgb(10, 10, 10);
+    background-image: linear-gradient(to bottom, #a4efc5, #2a9559,#185232);
+    top: auto;
+    box-shadow: 0px 2px 6px 2px rgb(0 0 0 / 48%);
+    margin: -10px;   
+    margin-bottom: 0px
+}
+
+header > h1{
+    
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+header > p{
+    
+    margin: auto;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+nav{
+    
+    display: inline-block;
+    margin: 10px;
+    color: white;
+   
+}
+nav li:hover{
+    border-radius: 5px;
+    background-color: rgb(27, 126, 71);
+    transition: 1s;
+}
+nav li{
+    display: inline-block;
+    margin: 0px;
+    padding: 10px;
+    font-weight: bold;
+    margin: auto;
+    
+
+}
+section img{
+    width: 100%;
+}
+
+section div{
+    text-align: center;
+    width: 100%
+}
+
+ 
+section{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    width: 59vw;
+    text-align: justify;
+    box-shadow: 0px 5px 8px 3px rgb(0 0 0 / 48%);
+    border-radius: 5px;
+}
+section h1{
+    padding: 5px;
+    color: #185232;
+    font-family: idroid;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 0px;
+}
+section h2{
+    margin: 0;
+    padding: 5px;
+    color: #185232;
+    background-image: linear-gradient(to right, #a4efc5, white);
+    font-family: idroid;
+    text-transform: uppercase;
+}
+
+section p{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    text-indent: 5%;
+    
+}
+
+img#bugdroid{
+    width: 25vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+
+}
+
+div#video{
+    height: 70vh;
+    width: 100%;
+    background-color: rgb(3, 87, 3);
+}
+
+
+#videoyt{
+    margin-top: 20px;
+    width: 90%;
+    height: 90%;
+  
+
+}
+aside{
+    margin-top: 25px;
+    
+    padding: 0px 10px 10px 10px;
+    background-color: #acf3cb;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 1px darkgrey;
+
+}
+aside h1{
+    margin: -10px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #49c07d;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+aside p{
+   
+}
+
+aside div{
+    display: inline-block;
+    text-align: justify;
+    align-items: center;
+   
+}
+
+aside ul{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.tabela{
+    display: flex;
+    padding-left: 0px;
+    margin: 10px;
+    width: auto;
+    height: 50vh;
+    
+}
+
+aside ul li:before {
+    content: '✓';
+    text-shadow: 1px 1px 1px black;
+}
+footer{
+    width: 100vw;
+    margin: -10px ;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    background-color: #1a5c38;
+}
+
+@media only screen and (max-width: 800px) {
+    .tabela{
+        flex-direction: column;
+    }
+    
+}
