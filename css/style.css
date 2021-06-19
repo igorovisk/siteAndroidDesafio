@@ -12,8 +12,10 @@
 body{
     background-color: #84e194;
     border-radius: 10px;
+    padding: 0px;
+    margin: 0px;
        
- }
+}
 
 header{
     font-family: 'Titillium Web', sans-serif;
@@ -21,7 +23,7 @@ header{
     background-image: linear-gradient(to bottom, #a4efc5, #2a9559,#185232);
     top: auto;
     box-shadow: 0px 2px 6px 2px rgb(0 0 0 / 48%);
-    margin: -10px;   
+     
     margin-bottom: 0px
 }
 
@@ -48,14 +50,20 @@ nav{
     display: inline-block;
     margin: 10px;
     color: white;
-   
+
 }
+
+
+
 nav li:hover{
+
     border-radius: 5px;
     background-color: rgb(27, 126, 71);
     transition: 1s;
 }
+
 nav li{
+    color: white;
     display: inline-block;
     margin: 0px;
     padding: 10px;
@@ -68,16 +76,11 @@ section img{
     width: 100%;
 }
 
-section div{
-    text-align: center;
-    width: 100%
-}
-
- 
 section{
+    
     font-family: 'Arial Narrow Bold', sans-serif;
     background-color: white;
-    padding: 20px;
+    
     margin: auto;
     width: 59vw;
     text-align: justify;
@@ -102,11 +105,14 @@ section h2{
 }
 
 section p{
+    line-height: 30px;
     font-family: 'Arial Narrow Bold', sans-serif;
     text-indent: 5%;
     
 }
-
+.intern{
+    padding: 20px;
+}
 img#bugdroid{
     width: 25vw;
     display: block;
@@ -119,14 +125,18 @@ div#video{
     height: 70vh;
     width: 100%;
     background-color: rgb(3, 87, 3);
+    text-align: center;
+    
 }
 
 
 #videoyt{
-    margin-top: 20px;
+    position: relative;
+    
     width: 90%;
     height: 90%;
-  
+    margin: auto;
+    top: 20px;
 
 }
 aside{
@@ -145,47 +155,61 @@ aside h1{
     font-family: 'Courier New', Courier, monospace;
 }
 
-aside p{
-   
-}
-
-aside div{
-    display: inline-block;
-    text-align: justify;
-    align-items: center;
-   
-}
-
-aside ul{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
 .tabela{
     display: flex;
-    padding-left: 0px;
-    margin: 10px;
-    width: auto;
-    height: 50vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+    
+}
+.tabela ul{
+    margin: 0px;
+    padding: 0px;
+    margin-right: 80px;
     
 }
 
+.tabela div{
+    width: 100%;
+}
 aside ul li:before {
     content: '✓';
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 2px black;
 }
 footer{
-    width: 100vw;
-    margin: -10px ;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
     color: white;
     text-align: center;
-    padding: 3px;
+    position: relative;
+    bottom: 0px;
     background-color: #1a5c38;
 }
+footer p {
+    margin: 0px;
+    margin-top: 15px;
+    padding: 10px;
+}
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width:953px) {
     .tabela{
         flex-direction: column;
     }
-    
 }
+
+@media only screen and (max-width:450px) {
+    section{
+        flex-direction: column;
+        margin: auto;
+        width: 100%;
+    }
+    .tabela{
+        flex-wrap: wrap;
+    }
+    .tabela ul{
+        width: 100%;
+        
+    }
+}
+    
